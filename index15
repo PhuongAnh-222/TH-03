@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Thanh Toán Đơn Hàng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .payment-form {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fdfdfd;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="payment-form">
+    <h2>Thanh Toán Đơn Hàng</h2>
+
+    <label for="address">Địa chỉ giao hàng:</label>
+    <textarea id="address" name="address" rows="3" placeholder="Nhập địa chỉ của bạn..." required></textarea>
+
+    <label for="method">Phương thức thanh toán:</label>
+    <select id="method" name="method" required>
+      <option value="">-- Chọn phương thức --</option>
+      <option value="cod">Thanh toán khi nhận hàng (COD)</option>
+      <option value="bank">Chuyển khoản ngân hàng</option>
+      <option value="momo">Ví điện tử (Momo, ZaloPay...)</option>
+    </select>
+
+    <label for="note">Ghi chú thêm (nếu có):</label>
+    <input type="text" id="note" name="note" placeholder="Ví dụ: Giao buổi chiều, gọi trước khi đến...">
+
+    <button type="submit">Xác nhận thanh toán</button>
+  </form>
+
+</body>
+</html>
