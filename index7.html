@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thư viện ảnh</title>
+  <style>
+    body {
+      background-color: #f1f8e9;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #33691e;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>📸 Thư viện ảnh của mình</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/200/300" alt="Ảnh 1">
+    <img src="https://picsum.photos/200/300" alt="Ảnh 2">
+    <img src="https://picsum.photos/200/300" alt="Ảnh 3">
+    <img src="https://picsum.photos/200/300" alt="Ảnh 4">
+    <img src="https://picsum.photos/200/300" alt="Ảnh 5">
+    <img src="https://picsum.photos/200/300" alt="Ảnh 6">
+  </div>
+</body>
+</html>
