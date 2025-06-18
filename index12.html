@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Khảo Sát Ý Kiến</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      padding: 40px;
+    }
+
+    form {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #2196f3;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Form Khảo Sát Ý Kiến</h2>
+
+    <label>Bạn có hài lòng với dịch vụ?</label>
+    <label><input type="radio" name="satisfaction" value="yes"> Hài lòng</label>
+    <label><input type="radio" name="satisfaction" value="no"> Không hài lòng</label>
+
+    <label style="margin-top: 12px;">Bạn thích loại sản phẩm nào?</label>
+    <label><input type="checkbox" name="product" value="A"> Sản phẩm A</label>
+    <label><input type="checkbox" name="product" value="B"> Sản phẩm B</label>
+    <label><input type="checkbox" name="product" value="C"> Sản phẩm C</label>
+
+    <label style="margin-top: 12px;">Góp ý của bạn:</label>
+    <textarea rows="4" placeholder="Viết tại đây..."></textarea>
+
+    <button type="submit">Gửi khảo sát</button>
+  </form>
+
+</body>
+</html>
