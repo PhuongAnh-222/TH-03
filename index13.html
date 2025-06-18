@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Đặt Bàn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9;
+      padding: 40px;
+    }
+
+    form {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #2e7d32;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Form Đặt Bàn Quán Ăn</h2>
+
+    <label>Ngày & Giờ:</label>
+    <input type="datetime-local" required>
+
+    <label>Số người:</label>
+    <input type="number" min="1" max="20" placeholder="Nhập số lượng người" required>
+
+    <label>Yêu cầu thêm:</label>
+    <textarea rows="3" placeholder="Ví dụ: cần bàn gần cửa sổ..."></textarea>
+
+    <button type="submit">Đặt bàn</button>
+  </form>
+
+</body>
+</html>
