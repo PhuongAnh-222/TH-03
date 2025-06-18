@@ -1,0 +1,60 @@
+    /* Danh sách các môn học yêu thích */
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Môn học yêu thích</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #004d40;
+    }
+
+    ul {
+      list-style-type: none; /* bỏ dấu chấm */
+      padding: 0;
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    li {
+      padding: 12px;
+      margin: 5px 0;
+      border-radius: 8px;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    /* Tô màu từng dòng khác nhau */
+    li:nth-child(odd) {
+      background-color: #26a69a;
+    }
+
+    li:nth-child(even) {
+      background-color: #00796b;
+    }
+
+    /* Hover đổi màu */
+    li:hover {
+      background-color: #004d40;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Môn học yêu thích của mình</h1>
+  <ul>
+    <li>Thiết kế Web</li>
+    <li>Marketing số</li>
+    <li>Thương mại điện tử</li>
+    <li>Phân tích dữ liệu</li>
+    <li>Kỹ năng mềm</li>
+  </ul>
+</body>
+</html>
